@@ -1,0 +1,71 @@
+{
+    "trips":[
+        {
+            "city": "Seattle",
+            "day": 1,
+            "title": "Exploring Downtown Seattle",
+            "activities": [
+            {
+                "name": "Pike Place Market",
+                "description": "Start your trip with a visit to Pike Place Market. Enjoy the lively atmosphere, watch the famous fish toss, and browse through the various stalls offering fresh produce, seafood, and artisanal goods. Don't forget to visit the original Starbucks store located nearby."
+            },
+            {
+                "name": "Seattle Aquarium",
+                "description": "Head to the Seattle Aquarium located on the waterfront. It’s a great place to learn about the marine life of the Pacific Northwest. Enjoy interactive exhibits and see animals such as sea otters, octopuses, and seals."
+            },
+            {
+                "name": "Seattle Great Wheel",
+                "description": "Take a ride on the Seattle Great Wheel for stunning views of the city and Elliott Bay. It’s especially beautiful at sunset."
+            },
+            {
+                "name": "Dinner at a Waterfront Restaurant",
+                "description": "End your day with dinner at one of the many waterfront restaurants. Consider dining at Elliott’s Oyster House for some delicious seafood."
+            }
+            ]
+        },
+        {
+            "day": 2,
+            "title": "Outdoor Adventures",
+            "activities": [
+            {
+                "name": "Hiking in Discovery Park",
+                "description": "Start your day with a hike in Discovery Park, the largest park in Seattle. Enjoy scenic views of Puget Sound, explore the forested trails, and visit the historic lighthouse."
+            },
+            {
+                "name": "Kayaking on Lake Union",
+                "description": "Rent a kayak and explore Lake Union. Paddle past houseboats, enjoy views of the city skyline, and watch seaplanes take off and land."
+            },
+            {
+                "name": "Gas Works Park",
+                "description": "Visit Gas Works Park, a former gasification plant turned park. Enjoy a picnic, fly a kite, and take in panoramic views of the city."
+            },
+            {
+                "name": "Dinner in Fremont",
+                "description": "Head to the quirky neighborhood of Fremont for dinner. Try local favorites like Paseo Caribbean Restaurant or Revel for a unique dining experience."
+            }
+            ]
+        },
+        {
+            "day": 3,
+            "title": "Cultural Exploration",
+            "activities": [
+            {
+                "name": "Chihuly Garden and Glass",
+                "description": "Start your day at Chihuly Garden and Glass, a museum showcasing the stunning glass art of Dale Chihuly. Marvel at the intricate sculptures and vibrant colors."
+            },
+            {
+                "name": "Museum of Pop Culture",
+                "description": "Visit the Museum of Pop Culture (MoPOP) to explore exhibits on music, science fiction, and pop culture. Don’t miss the interactive Sound Lab and the iconic Guitar Gallery."
+            },
+            {
+                "name": "Space Needle",
+                "description": "End your trip with a visit to the iconic Space Needle. Take the elevator to the observation deck for panoramic views of the city and surrounding mountains."
+            },
+            {
+                "name": "Dinner in Capitol Hill",
+                "description": "Head to Capitol Hill for dinner at one of the trendy restaurants. Consider dining at Terra Plata for farm-to-table cuisine or Ba Bar for Vietnamese street food."
+            }
+            ]       
+        }
+    ]
+}

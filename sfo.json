@@ -1,0 +1,71 @@
+{
+    "trips":[
+    {
+        "city":"San Francisco",
+        "day": 1,
+        "title": "Exploring the City",
+        "activities": [
+            {
+                "name": "Golden Gate Bridge",
+                "description": "Start your day with a visit to the iconic Golden Gate Bridge. Walk or bike across the bridge for stunning views of the bay and city skyline."
+            },
+            {
+                "name": "Fisherman's Wharf",
+                "description": "Head to Fisherman's Wharf, a bustling waterfront area known for its seafood restaurants, shops, and attractions. Don't miss the sea lions at Pier 39."
+            },
+            {
+                "name": "Alcatraz Island",
+                "description": "Take a ferry to Alcatraz Island to explore the infamous former prison. Learn about the history of the island and its notorious inmates on a guided tour."
+            },
+            {
+                "name": "Dinner in North Beach",
+                "description": "End your day with dinner in North Beach, San Francisco's Italian neighborhood. Enjoy a meal at one of the many cozy trattorias or pizzerias."
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "title": "Outdoor Adventures",
+        "activities": [
+            {
+                "name": "Hiking in Muir Woods",
+                "description": "Start your day with a hike in Muir Woods National Monument, home to towering redwood trees. Explore the peaceful trails and enjoy the natural beauty of the forest."
+            },
+            {
+                "name": "Stinson Beach",
+                "description": "After your hike, relax at Stinson Beach, a beautiful sandy beach located just a short drive from Muir Woods. Take a swim, sunbathe, or enjoy a picnic by the ocean."
+            },
+            {
+                "name": "Sausalito",
+                "description": "Visit the charming town of Sausalito, located across the bay from San Francisco. Explore the shops, art galleries, and waterfront restaurants in this picturesque town."
+            },
+            {
+                "name": "Dinner in the Mission District",
+                "description": "Head to the Mission District for dinner at one of the many trendy restaurants. Try local favorites like Tartine Bakery or Foreign Cinema for a unique dining experience."
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "title": "Cultural Exploration",
+        "activities": [
+            {
+                "name": "Golden Gate Park",
+                "description": "Start your day at Golden Gate Park, a large urban park with gardens, museums, and attractions. Visit the California Academy of Sciences, the de Young Museum, and the Japanese Tea Garden."
+            },
+            {
+                "name": "Mission Murals",
+                "description": "Explore the vibrant street art of the Mission District. Take a walking tour to see colorful murals and graffiti art that reflect the neighborhood's history and culture."
+            },
+            {
+                "name": "Chinatown",
+                "description": "Visit San Francisco's historic Chinatown, the oldest and one of the largest in North America. Explore the colorful streets, shops, and restaurants in this vibrant neighborhood."
+            },
+            {
+                "name": "Dinner in Hayes Valley",
+                "description": "End your trip with dinner in Hayes Valley, a trendy neighborhood known for its boutiques and restaurants. Consider dining at Rich Table or Souvla for a delicious meal."
+            }
+        ]       
+    }
+]
+}
