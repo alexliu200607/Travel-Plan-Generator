@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue',sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+a {
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+  
+a:hover {
+    background-color: gold;
+    color: brown;
+}
+
+a:visited {
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+ 
+/*------------------------------ styles for Grid ------------------------------------*/
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid gold;
+    padding: 20px;
+    text-align: center;
+    color: chocolate; 
+    font-size: 1rem; 
+}
+   
+.img-container {
+    width: 150px;
+    height:200px;
+}
+/*------------------------------ End of styles for Grid ------------------------------------*/
+
+
+/*------------------------------ styles for Banner ------------------------------------*/
+#banner-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: rgb(109,180,198); /* Set the background color to your preference */
+  z-index: 1; /* Adjust the z-index as needed */
+}
+
+#banner-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    top: 23px;
+    left: 90px;
+    position: absolute;
+    z-index: 2;
+}
+
+#banner-menu {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+
+  height: 40px;
+  top: 15px; 
+  right: 80px; 
+  position: absolute;
+}
+/*------------------------------ End of styles for Search bar ------------------------------------*/
+
+
+/*------------------------------ styles for Search bar ------------------------------------*/
+.search-bar {
+    margin: auto;
+    width: 850px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 8px 8px 5px silver;
+    background-color: ivory;
+  }
+  
+  .search-bar input {
+    border: 1px solid gray;
+    width: 250px;
+    height: 24px;
+    margin-right: 5px; 
+  }
+  
+  .search-bar input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+  }
+  
+  .search-bar button {
+    background-color: wheat;
+    color: black;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  /*------------------------------ End of styles for Search bar ------------------------------------*/
