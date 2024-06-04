@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CoTraveller App - Advanced Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="banner-div">
+        <img src="./images/logo.png" style="height: 80px;">
+        <div id="banner-title">Cotraveller - travel companion</div>
+        <div id="banner-menu"><a href="./index.html">Home</a><a href="./advsearch.html">Advanced Search</a></div>
+    </div>
+    
+    <br/><br/><br/></br>
+    <p>
+        Advanced search will let use provide the inputs and call the OpenAI API to get a travel plan based on the provided inputs. You can provide the city and the number of days you want to spend in that city.
+        This will not require user to move to another site to get the travel plan.
+    </p>
+
+    <br/>
+    <div class="search-bar">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="City name" required style="width: 250px;">
+        <label for="days">Duration:</label>
+        <input class="input" type="number" id="days" name="days" placeholder="Days" min="1" max="10" required style="width: 75px;">
+            <button onclick="getTravelPlan()">Get Travel Plan</button>
+    </div>
+        
+    <br/>    <br/>
+<div id="plan">
+    Plan will be displayed here.
+</div>
+<br/>
+<div id="errormessage" style="color: brown;">
+
+</div>
+
+<script>
+function getTravelPlan() {
+    var city = document.getElementById("city").value;
+    var days = document.getElementById("days").value;
+    var responseData ="";
+
+    if(city === "" || days === "") {
+        alert("Please enter city and days");
+        return;
+    }
+
+    axios.post('https://api.openai.com/v1/completions', {
+        model: "gpt-3.5-turbo-1106",
+        prompt: `Generate a travel plan for ${days} days in ${city}.`,
+        max_tokens: 64
+    }, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer YOUR_OPENAI_API_KEY'
+        }
+    })
+    .then(function (response) {
+        var aiResponse = response.data.choices[0].text.trim();
+        var responseData = document.getElementById("plan");
+        responseData.innerHTML = aiResponse;
+    })
+    .catch(function (error) {
+        var errorMessage = document.getElementById("errormessage");
+        errorMessage.innerHTML = error.response.data.error.message;;
+        console.log(error);
+    });
+}
+</script>
+
+</body>
+</html>
