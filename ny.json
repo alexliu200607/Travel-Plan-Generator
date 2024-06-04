@@ -1,0 +1,72 @@
+{
+    "trips":[
+    {
+        "city": "New York",
+        "day": 1,
+        "title": "Exploring Downtown New York",
+        "activities": [
+            {
+                "name": "Times Square",
+                "description": "Start your trip with a visit to Times Square, the bustling heart of New York City. Marvel at the bright lights, giant billboards, and street performers in this iconic landmark."
+            },
+            {
+                "name": "Central Park",
+                "description": "Head to Central Park, a sprawling oasis in the middle of Manhattan. Enjoy a leisurely stroll, rent a bike, or take a boat ride on the lake to experience the beauty of the park."
+            },
+            {
+                "name": "Empire State Building",
+                "description": "Visit the Empire State Building for panoramic views of the city skyline. Take the elevator to the observation deck on the 86th floor for breathtaking sights of New York."
+            },
+            {
+                "name": "Dinner in Little Italy",
+                "description": "End your day with dinner in Little Italy, a vibrant neighborhood known for its delicious Italian cuisine. Enjoy a meal at one of the many cozy trattorias or pizzerias."
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "title": "Art and Culture",
+        "activities": [
+            {
+                "name": "The Metropolitan Museum of Art",
+                "description": "Start your day at The Metropolitan Museum of Art, one of the largest and most prestigious art museums in the world. Explore the vast collection of art spanning thousands of years and cultures."
+            },
+            {
+                "name": "Broadway Show",
+                "description": "Catch a Broadway show in the evening for a quintessential New York experience. Choose from a variety of musicals, plays, and performances in the Theater District."
+            },
+            {
+                "name": "Museum of Modern Art",
+                "description": "Visit the Museum of Modern Art (MoMA) to see works by iconic artists such as Picasso, Van Gogh, and Warhol. Don't miss the museum's famous collection of modern and contemporary art."
+            },
+            {
+                "name": "Dinner in Greenwich Village",
+                "description": "End your day with dinner in Greenwich Village, a historic neighborhood known for its charming streets and diverse dining options. Try local favorites like Joe's Pizza or Mamoun's Falafel."
+            }
+        ]
+
+    },
+    {
+        "day": 3,
+        "title": "Exploring Lower Manhattan",
+        "activities": [
+            {
+                "name": "Statue of Liberty",
+                "description": "Start your day with a visit to the Statue of Liberty and Ellis Island. Take a ferry to the iconic statue, explore the museum, and learn about the history"
+            },
+            {
+                "name": "One World Observatory",
+                "description": "Head to One World Observatory for stunning views of the city and the surrounding area. Take the elevator to the top of the tallest building in the Western Hemisphere for panoramic sights."
+            },
+            {
+                "name": "9/11 Memorial and Museum",
+                "description": "Visit the 9/11 Memorial and Museum to pay tribute to the victims of the September 11th attacks. Explore the museum's exhibits, artifacts, and stories of resilience and remembrance."
+            },
+            {
+                "name": "Dinner in Chinatown",
+                "description": "End your day with dinner in Chinatown, a vibrant neighborhood known for its delicious Asian cuisine. Try local favorites like Joe's Shanghai or Nom Wah Tea Parlor."
+            }
+        ] 
+    }
+]
+}

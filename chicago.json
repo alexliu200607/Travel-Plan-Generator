@@ -1,0 +1,70 @@
+{
+    "trips":[
+{
+        "city":"Chicago",
+        "day": 1,
+        "title": "Exploring Downtown Chicago",
+        "activities": [
+            {
+                "name": "Millennium Park",
+                "description": "Start your trip with a visit to Millennium Park, a popular gathering spot in the heart of downtown Chicago. Take a selfie in front of the iconic Cloud Gate sculpture, also known as 'The Bean.'"
+            },
+            {
+                "name": "Art Institute of Chicago",
+                "description": "Head to the Art Institute of Chicago, one of the oldest and largest art museums in the United States. Explore the museum's impressive collection of art, including works by famous artists like Picasso, Monet, and Warhol."
+            },
+            {
+                "name": "Navy Pier",
+                "description": "Visit Navy Pier, a bustling entertainment and dining destination on Lake Michigan. Take a ride on the Ferris wheel, enjoy a boat tour of the lake, or explore the shops and restaurants along the pier."
+            },
+            {
+                "name": "Dinner in River North",
+                "description": "End your day with dinner in River North, a trendy neighborhood known for its art galleries, boutiques, and restaurants. Try local favorites like Lou Malnati's Pizzeria or RPM Italian for a delicious meal."
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "title": "Cultural Exploration",
+        "activities": [
+            {
+                "name": "Museum Campus",
+                "description": "Start your day at Museum Campus, a scenic park on Lake Michigan that is home to several of Chicago's top museums. Visit the Field Museum, Shedd Aquarium, or Adler Planetarium to learn about natural history, marine life, and astronomy."
+            },
+            {
+                "name": "Willis Tower Skydeck",
+                "description": "Head to the Willis Tower Skydeck for panoramic views of the city and beyond. Step out onto the glass-floored Ledge, a transparent balcony that extends out from the 103rd floor of the skyscraper."
+            },  
+            {
+                "name": "Chicago Riverwalk",
+                "description": "Stroll along the Chicago Riverwalk, a scenic promenade that runs along the Chicago River. Enjoy views of the city skyline, public art installations, and outdoor dining options along the riverfront."
+            },
+            {
+                "name": "Dinner in the West Loop",
+                "description": "End your day with dinner in the West Loop, a vibrant neighborhood known for its trendy restaurants and nightlife. Try local favorites"
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "activities": [
+            {
+                "name": "Lincoln Park Zoo",
+                "description": "Start your day at Lincoln Park Zoo, one of the oldest zoos in the United States. Explore the zoo's exhibits and see animals from around the world, including lions, tigers, and bears." 
+            },
+            {
+                "name": "Wrigley Field",
+                "description": "Head to Wrigley Field, home of the Chicago Cubs, to catch a baseball game or take a tour of the historic ballpark. Experience the excitement of America's favorite pastime in this iconic stadium."
+            },
+            {   
+                "name": "The Magnificent Mile",
+                "description": "Shop and dine along The Magnificent Mile, a prestigious shopping district in downtown Chicago. Explore luxury boutiques, department stores, and restaurants on this iconic street."
+            },
+            { 
+                "name": "Dinner in the Loop",
+                "description": "End your day with dinner in the Loop, Chicago's central business district. Choose from a variety of restaurants, cafes, and bars in the area for a delicious meal."
+            }
+        ]
+    }
+]
+}
