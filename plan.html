@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CoTraveller App - Plan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>   
+    <div id="banner-div">
+        <img src="./images/logo.png" style="height: 80px;">
+        <div id="banner-title">Cotraveller - travel companion</div>
+        <div id="banner-menu"><a href="./index.html">Home</a><a href="./advsearch.html">Advanced Search</a></div>
+    </div>
+
+    <br/><br/>    <br/><br/>
+    <a href="index.html">
+        <img src="./images/back.png" style="height: 40px; width: 40px;" >
+    </a>
+
+    <div id="tripplan" class="plan-div">
+
+    </div>
+
+    <div id="errorMessage">
+
+    </div>
+
+
+
+
+    <script>
+        // Get the query string parameters
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const id = urlParams.get('id');
+        const tripPlanDiv = document.getElementById("tripplan");
+        tripPlanDiv.innerHTML = "";
+
+        function fetchJSONData() {                       
+            if(id === null) {
+                // Redirect to the home page if the "id" parameter is not provided
+                tripPlanDiv.innerHTML = "No city selected.";
+                return;
+            }
+
+            const validIds = ['chicago', 'ny', 'sfo', 'seattle'];
+            if (!validIds.includes(id)) {
+                tripPlanDiv.innerHTML = "No data available for the selected city.";
+                return;
+            }
+
+            const jsonDataFile = "./data/" + id + ".json";
+            fetch(jsonDataFile)
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error
+                            (`HTTP error! Status: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then((data) =>                       
+                        data.trips.forEach((item) => {
+                            const dayDiv = document.createElement("div");
+                            dayDiv.textContent = "Day - " + item.day + (item.city ? " | " + item.city : "");
+                            dayDiv.style.cssText = "font-size: 1.5rem;background-color: silver;padding: 5px;";
+                            tripPlanDiv.appendChild(dayDiv);
+
+                            const titleDiv = document.createElement("div");
+                            titleDiv.textContent = item.title;
+                            titleDiv.style.cssText = "font-size: 1.2rem;color:brown;padding: 3px;";
+                            tripPlanDiv.appendChild(titleDiv);
+
+                            const activitiesDiv = document.createElement("div");
+
+                            for(const activity of item.activities) {
+                                const nameDiv = document.createElement("div");
+                                nameDiv.textContent = activity.name;
+                                nameDiv.style.cssText = "font-weight:bold;padding: 3px;color:rgb(39, 39, 39)";
+                                const descriptionDiv = document.createElement("div");
+                                descriptionDiv.textContent = activity.description;       
+                                descriptionDiv.style.cssText = "color:rgb(30, 55, 55);padding: 3px;";                         
+                                activitiesDiv.appendChild(nameDiv);
+                                activitiesDiv.appendChild(descriptionDiv);
+                            }
+
+                            tripPlanDiv.appendChild(activitiesDiv);
+                            tripPlanDiv.appendChild(document.createElement("br"));
+                            console.log(data.trips);
+                            })
+                    )
+                .catch((error) => 
+                       console.error("Unable to fetch data:", error));
+        }
+
+        fetchJSONData();
+    </script>
+  </body>
+</html>
